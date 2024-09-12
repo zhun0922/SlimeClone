@@ -10,11 +10,13 @@ public class Bullet : MonoBehaviour
     [SerializeField] float basicSpeed;
     public float BasicSpeed => basicSpeed;
 
-    [SerializeField] float basicPower;
-    public float BasicPower => basicPower;
+    [SerializeField] float basicDamage;
+    public float BasicDamage => basicDamage;
 
     [SerializeField] float basicDelay;
     public float BasicDelay => basicDelay;
+
+    //public bool isDoubleShot = false;
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
